@@ -54,8 +54,7 @@
       padding: 0.4rem;
     }
 
-    .carousel__prev,
-    .carousel__next {
+    .carousel__prev, .carousel__next {
       background-color: var(--vt-c-white);
       border-radius: 1rem;
       font-size: 1rem;

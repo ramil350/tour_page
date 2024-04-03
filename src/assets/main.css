@@ -1,7 +1,9 @@
 @import './base.css';
+@import url('https://fonts.googleapis.com/css?family=Questrial');
 
 #app {
   font-weight: normal;
+  font-family: 'Questrial', sans-serif;
 }
 
 a,

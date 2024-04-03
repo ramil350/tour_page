@@ -1,6 +1,7 @@
 <script setup>
   import 'vue3-carousel/dist/carousel.css'
   import { Carousel, Slide, Navigation } from 'vue3-carousel'
+  import RouteIcon from './icons/IconFontAwesomeRoute.vue'
 
   const props = defineProps({
     tour: Object
@@ -30,6 +31,9 @@
     </div>
 
     <div class="tour-itinerary__label">
+      <span class="tour-itinerary__label-icon">
+        <i><RouteIcon /></i>
+      </span>
       Itinerary
     </div>
 
@@ -121,6 +125,16 @@
       font-size: 1.5rem;
       font-weight: bold;
       display: inline-block;
+
+      .tour-itinerary__label-icon {
+        display: inline-block;
+        width: 24px;
+        margin-right: 0.5rem;
+
+        svg {
+          fill: var(--color-green-blue);
+        }
+      }
     }
 
     .tour-itinerary {

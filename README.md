@@ -1,6 +1,6 @@
-# tour_page
+# Tour Page Design
 
-This template should help get you started developing with Vue 3 in Vite.
+This is an example of Tour Page design converted into code.
 
 ## Recommended IDE Setup
 
@@ -22,8 +22,19 @@ npm install
 npm run dev
 ```
 
+### Open app
+
+```
+  http://localhost:5173/
+```
+
 ### Compile and Minify for Production
 
 ```sh
 npm run build
 ```
+
+## Examples
+
+* https://www.screencast.com/t/h4CLW3VYV
+* https://www.screencast.com/t/IpNNPrmy

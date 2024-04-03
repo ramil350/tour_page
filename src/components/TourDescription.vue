@@ -67,6 +67,10 @@
       </div>
     </div>
   </div>
+
+  <div class="tour-itinerary__progress-container">
+    <div class="tour-itinerary__progress-bar"></div>
+  </div>
 </template>
 
 <style>
@@ -187,6 +191,43 @@
         }
       }
 
+      .tour-itinerary__days .tour-itinerary__day:not(:last-of-type) {
+        .tour-itinerary__day-images-carousel:before {
+          position: absolute;
+          top: 4.5rem;
+          left: 0;
+          content: "";
+          height: 50%;
+          border-left: 0.1rem solid var(--color-dim-gray);
+        }
+      }
+
+      .tour-itinerary__days .tour-itinerary__day:last-of-type {
+        .tour-itinerary__day-images-carousel:before {
+          position: absolute;
+          left: 0;
+          content: "";
+          height: 50%;
+          border-left: 0.1rem solid var(--color-dim-gray);
+          margin-top: 4.5rem;
+          transform: translateY(-100%);
+        }
+      }
+
+      .tour-itinerary__day:before {
+        background-color: var(--vc-clr-white);
+        position: absolute;
+        left: 0.025rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        margin-top: 4.5rem;
+        content: "";
+        border: 1px solid var(--color-dim-gray);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+
       .tour-itinerary__day-images-carousel {
         max-height: 140px;
         max-width: 100%;
@@ -224,6 +265,25 @@
         }
       }
     }
+  }
+
+  .tour-itinerary__progress-container {
+    position: absolute;
+    top: 15.3rem;
+    right: 10%;
+    width: 0.2rem;
+    height: calc(100% - 16.8rem);
+/*    background: var(--color-green-blue);*/
+    background: var(--color-dim-gray);
+    border-radius: 2px;
+    margin: auto;
+  }
+
+  .tour-itinerary__progress-bar {
+    height: 9rem;
+    width: 0.2rem;
+    background: var(--color-green-blue);
+    border-radius: 2px;
   }
 
   @media (max-width: 800px) {
